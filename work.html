@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 사이트</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="work">
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="index.html">JuHyeon</a></div>
+      <h2>Keep Creating, Keep Growing</h2>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h3>MY CREATIVE WORKS</h3>
+        <h1>
+          Selected Works.
+        </h1>
+        <h2>
+          Design Portfolio 2026
+        </h2>
+        <p>다양한 디자인 작업과 성장 과정을 소개합니다.</p>
+        <div class="indicator">
+          <div>ALL PROTECTS</div>
+          <div></div>
+          <div>01 - 04</div>
+        </div>
+        <ul class="port">
+          <li class="web">
+            <div class="pic"><a
+                href="https://www.figma.com/proto/CSIIRKw1jEP1pO5TIpyl63/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=29-2&t=ne5X53bvbBa2zQqm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1"
+                target="_blank"><img src="images/port1.png" alt=""></a></div>
+            <div class="caption">
+              <div>01. UI/UX DESIGN</div>
+              <div></div>
+              <div>Website Renewal</div>
+            </div>
+          </li>
+          <li class="slider">
+            <div class="pic"><img src="images/port2.png" alt=""></div>
+            <div class="caption">
+              <div>02. POSTER DESIGN</div>
+              <div></div>
+              <div>Graphic Design</div>
+            </div>
+          </li>
+          <li class="graphic">
+            <div class="pic" data-img="images/portL3.png"><img src="images/port3.png" alt=""></div>
+            <div class="caption">
+              <div>03. CHARACTER DESIGN</div>
+              <div></div>
+              <div>Character & Illustration</div>
+            </div>
+          </li>
+          <li class="graphic">
+            <div class="pic" data-img="images/portL4.png"><img src="images/port4.png" alt=""></div>
+            <div class="caption">
+              <div>04. OTHER DESIGN</div>
+              <div></div>
+              <div>Logo &amp; Branding</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h1>THANK YOU FOR VISITING!</h1>
+        <p>저의 디자인과 성장 과정을 함께 봐주셔서 감사합니다.</p>
+      </div>
+      <footer>
+        <div class="container">
+          <p>JUHYUN © 2026</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <div id="modal">
+    <span>&times;</span>
+    <div class="content">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <div class="carousel">
+    <span>&times;</span>
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="images/poster1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/poster2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/poster3.png" alt="">
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- 페이징 버튼 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      }
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
